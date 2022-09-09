@@ -1,0 +1,15 @@
+{
+    "presets": ["next/babel"],
+    "plugins": [
+      [
+        "prismjs",
+        {
+          "languages": ["md"],
+          "plugins": ["line-numbers"],
+          "theme": "tomorrow",
+          "css": true
+        }
+      ],
+      "superjson-next"
+    ]
+  }
