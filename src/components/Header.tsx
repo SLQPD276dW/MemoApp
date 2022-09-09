@@ -158,7 +158,8 @@ const Header = () => {
                             <button
                                 onClick={() =>
                                     signOut({
-                                        callbackUrl: "http://localhost:3000",
+                                        callbackUrl:
+                                            process.env.NEXT_PUBLIC_BASE_URL,
                                     })
                                 }
                             >
@@ -182,7 +183,9 @@ const Header = () => {
                                     <h3 className="font-bold text-lg">
                                         本当にアカウントを消去しますか？
                                     </h3>
-                                    <p className="py-4">このアカウントとそれに紐づく全てのメモが消去されます。この操作は取り消せません。</p>
+                                    <p className="py-4">
+                                        このアカウントとそれに紐づく全てのメモが消去されます。この操作は取り消せません。
+                                    </p>
                                     <div className="flex justify-center mt-16 gap-8">
                                         <button
                                             className="btn"

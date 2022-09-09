@@ -12,7 +12,8 @@ const SignIn = () => {
                             className="btn btn-outline btn-success gap-2"
                             onClick={() =>
                                 signIn("github", {
-                                    callbackUrl: "http://localhost:3000",
+                                    callbackUrl:
+                                        process.env.NEXT_PUBLIC_BASE_URL,
                                 })
                             }
                         >
@@ -33,7 +34,8 @@ const SignIn = () => {
                             className="btn btn-outline gap-2"
                             onClick={() =>
                                 signIn("google", {
-                                    callbackUrl: "http://localhost:3000",
+                                    callbackUrl:
+                                        process.env.NEXT_PUBLIC_BASE_URL,
                                 })
                             }
                         >
