@@ -180,11 +180,11 @@ const MemoEditorPage = (props: Props) => {
             <Layout>
                 <div className="lg:artboard artboard-horizontal phone-3 mx-auto my-6">
                     <div className="flex justify-end items-center gap-2">
-                        <kbd className="kbd-sm border-solid rounded-lg border-2 border-slate-700">
+                        <kbd className="kbd-sm border-solid rounded-lg border-2 border-bg-base-content">
                             ctrl
                         </kbd>
                         +
-                        <kbd className="kbd-sm border-solid rounded-lg border-2 border-slate-700">
+                        <kbd className="kbd-sm border-solid rounded-lg border-2 border-bg-base-content">
                             s
                         </kbd>
                         <button
@@ -211,7 +211,7 @@ const MemoEditorPage = (props: Props) => {
                         </label>
                     </div>
                     <div className="flex flex-col items-center">
-                        <kbd className="kbd-sm border-solid rounded-lg border-2 border-slate-700">
+                        <kbd className="kbd-sm border-solid rounded-lg border-2 border-bg-base-content">
                             tab
                         </kbd>
                         <div className="tabs font-bold">

@@ -5,7 +5,7 @@ const SignIn = () => {
         <div>
             <h2 className="text-2xl text-center font-extrabold">Memo App</h2>
             <div className="container px-5 py-24 mx-auto lg:w-6/12">
-                <div className="border-2 border-white rounded-lg text-center">
+                <div className="border-2 border-bg-base-content rounded-lg text-center">
                     <h2 className="text-2xl font-bold pb-4">Sign in</h2>
                     <div className="p-2">
                         <button

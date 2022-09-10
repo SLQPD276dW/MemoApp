@@ -122,7 +122,7 @@ const Header = () => {
                 <div className="dropdown dropdown-end">
                     <label
                         tabIndex={0}
-                        className="btn btn-ghost border-2 border-slate-700 gap-2"
+                        className="btn btn-ghost border-2 border-bg-base-content gap-2"
                     >
                         {session.user?.name}
                         <Image
