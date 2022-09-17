@@ -10,6 +10,7 @@ const SignIn = () => {
                     <div className="p-2">
                         <button
                             className="btn btn-outline btn-success gap-2"
+                            data-test="github"
                             onClick={() =>
                                 signIn("github", {
                                     callbackUrl:
@@ -32,6 +33,7 @@ const SignIn = () => {
                     <div className="p-2">
                         <button
                             className="btn btn-outline gap-2"
+                            data-test="google"
                             onClick={() =>
                                 signIn("google", {
                                     callbackUrl:
