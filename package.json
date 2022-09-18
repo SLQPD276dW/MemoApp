@@ -31,6 +31,7 @@
     "superjson": "^1.9.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.25.2",
     "@tailwindcss/typography": "^0.5.4",
     "@testing-library/cypress": "^8.0.3",
     "@types/dompurify": "^2.3.3",
