@@ -7,8 +7,6 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "cypress:open": "cypress open",
-        "e2e": "start-server-and-test dev http://localhost:3000 cypress:open",
         "pw:test": "playwright test",
         "e2e:pw": "start-server-and-test dev http://localhost:3000 pw:test"
     },
