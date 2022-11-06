@@ -8,6 +8,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
+        "format":"prettier --write ./**/*.{ts,tsx}",
         "pw:test": "playwright test",
         "e2e:pw": "start-server-and-test dev http://localhost:3000 pw:test",
         "make-notice": "node src/tools/createLicenses.js"
