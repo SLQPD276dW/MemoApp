@@ -36,7 +36,6 @@
     "devDependencies": {
         "@playwright/test": "^1.25.2",
         "@tailwindcss/typography": "^0.5.4",
-        "@testing-library/cypress": "^8.0.3",
         "@types/dompurify": "^2.3.3",
         "@types/marked": "^4.0.3",
         "@types/next-auth": "3.13.0",

@@ -39,7 +39,5 @@ yarn-error.log*
 next-env.d.ts
 
 # cypress
-cypress.env.json
-/test-results/
 /playwright-report/
 /playwright/.cache/
