@@ -1,1 +1,1 @@
-export type EditorType = "Markdown" | "Preview";
+export type EditorType = 'Markdown' | 'Preview';
