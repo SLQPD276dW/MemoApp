@@ -116,7 +116,7 @@ const Header = () => {
         <div className="dropdown dropdown-end">
           <label
             tabIndex={0}
-            className="btn btn-ghost border-2 border-bg-base-content gap-2"
+            className="border-bg-base-content btn btn-ghost gap-2 border-2"
           >
             {session.user?.name}
             <Image
@@ -129,7 +129,7 @@ const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52 border-2 border-slate-700"
+            className="dropdown-content menu rounded-box menu-compact mt-3 w-52 border-2 border-slate-700 bg-base-100 p-2 shadow"
           >
             <li>
               <label className="swap">
@@ -169,18 +169,18 @@ const Header = () => {
                   contentLabel="Delete Account"
                   style={customStyles}
                 >
-                  <h3 className="font-bold text-lg">
+                  <h3 className="text-lg font-bold">
                     本当にアカウントを消去しますか？
                   </h3>
                   <p className="py-4">
                     このアカウントとそれに紐づく全てのメモが消去されます。この操作は取り消せません。
                   </p>
-                  <div className="flex justify-center mt-16 gap-8">
+                  <div className="mt-16 flex justify-center gap-8">
                     <button className="btn" onClick={closeModal}>
                       Cancel
                     </button>
                     <button
-                      className="btn btn-error btn-outline"
+                      className="btn btn-outline btn-error"
                       onClick={async () => {
                         try {
                           await fetch(
@@ -210,7 +210,7 @@ const Header = () => {
   return (
     <div className="navbar bg-base-100 shadow-xl">
       <div className="flex-1">
-        <Link href="/" className="btn btn-ghost normal-case text-xl">
+        <Link href="/" className="btn btn-ghost text-xl normal-case">
           Memo App
         </Link>
       </div>

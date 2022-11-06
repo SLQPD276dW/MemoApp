@@ -172,13 +172,13 @@ const MemoEditorPage = (props: Props) => {
   if (session) {
     return (
       <Layout>
-        <div className="lg:artboard artboard-horizontal phone-3 mx-auto my-6">
-          <div className="flex justify-end items-center gap-2">
-            <kbd className="kbd-sm border-solid rounded-lg border-2 border-bg-base-content">
+        <div className="artboard-horizontal phone-3 mx-auto my-6 lg:artboard">
+          <div className="flex items-center justify-end gap-2">
+            <kbd className="border-bg-base-content kbd-sm rounded-lg border-2 border-solid">
               ctrl
             </kbd>
             +
-            <kbd className="kbd-sm border-solid rounded-lg border-2 border-bg-base-content">
+            <kbd className="border-bg-base-content kbd-sm rounded-lg border-2 border-solid">
               s
             </kbd>
             <button
@@ -189,7 +189,7 @@ const MemoEditorPage = (props: Props) => {
               Update
             </button>
           </div>
-          <div className="flex justify-center my-2">
+          <div className="my-2 flex justify-center">
             <input
               type="text"
               defaultValue={props.memo.title}
@@ -204,12 +204,12 @@ const MemoEditorPage = (props: Props) => {
             </label>
           </div>
           <div className="flex flex-col items-center">
-            <kbd className="kbd-sm border-solid rounded-lg border-2 border-bg-base-content">
+            <kbd className="border-bg-base-content kbd-sm rounded-lg border-2 border-solid">
               tab
             </kbd>
             <div className="tabs font-bold">
               <a
-                className={`tab tab-lg tab-lifted font-bold' ${
+                className={`font-bold' tab tab-lifted tab-lg ${
                   isEqualEditorStatus('Markdown') ? 'tab-active' : ''
                 }`}
                 onClick={() => SetEditorStatus('Markdown')}
@@ -217,7 +217,7 @@ const MemoEditorPage = (props: Props) => {
                 Markdown
               </a>
               <a
-                className={`tab tab-lg tab-lifted font-bold' ${
+                className={`font-bold' tab tab-lifted tab-lg ${
                   isEqualEditorStatus('Preview') ? 'tab-active' : ''
                 }`}
                 onClick={() => SetEditorStatus('Preview')}

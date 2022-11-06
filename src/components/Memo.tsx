@@ -15,17 +15,17 @@ const Memo = ({ memo }: { memo: MemoType }) => {
   const deleteButtonRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className="card w-auto bg-base-100 shadow-xl mt-4">
+    <div className="card mt-4 w-auto bg-base-100 shadow-xl">
       <div className="navbar bg-base-100">
         <div className="flex-1" />
         <div className="flex-none gap-2">
-          <div className="dropdown dropdown-end">
-            <button className="btn btn-square btn-ghost">
+          <div className="dropdown-end dropdown">
+            <button className="btn btn-ghost btn-square">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="inline-block w-5 h-5 stroke-current"
+                className="inline-block h-5 w-5 stroke-current"
               >
                 <path
                   strokeLinecap="round"
@@ -37,7 +37,7 @@ const Memo = ({ memo }: { memo: MemoType }) => {
             </button>
             <ul
               tabIndex={0}
-              className="dropdown-content menu menu-compact mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow"
             >
               <li>
                 <button

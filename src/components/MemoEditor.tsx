@@ -13,7 +13,7 @@ type Props = {
 const MemoEditor = (props: Props) => {
   return (
     <div
-      className="border-solid rounded-lg border-2 border-bg-base-content"
+      className="border-bg-base-content rounded-lg border-2 border-solid"
       hidden={props.isHidden}
     >
       <Editor

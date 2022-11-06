@@ -76,7 +76,7 @@ const Home = (props: Props) => {
   if (session && props.memos !== null) {
     return (
       <Layout>
-        <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-flow-row gap-4">
+        <div className="grid grid-flow-row gap-4 md:grid-cols-1 lg:grid-cols-3">
           {props &&
             props.memos.map((memo) => <Memo key={memo.id} memo={memo} />)}
         </div>

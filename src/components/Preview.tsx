@@ -9,7 +9,7 @@ type Props = {
 const Preview = (props: Props) => {
   return (
     <div
-      className="border-solid rounded-lg border-2 border-bg-base-content text-2xl"
+      className="border-bg-base-content rounded-lg border-2 border-solid text-2xl"
       hidden={props.isHidden}
     >
       <ReactMarkdown className="prose p-3">{props.content}</ReactMarkdown>

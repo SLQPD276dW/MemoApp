@@ -3,10 +3,10 @@ import { signIn } from 'next-auth/react';
 const SignIn = () => {
   return (
     <div>
-      <h2 className="text-2xl text-center font-extrabold">Memo App</h2>
-      <div className="container px-5 py-24 mx-auto lg:w-6/12">
-        <div className="border-2 border-bg-base-content rounded-lg text-center">
-          <h2 className="text-2xl font-bold pb-4">Sign in</h2>
+      <h2 className="text-center text-2xl font-extrabold">Memo App</h2>
+      <div className="container mx-auto px-5 py-24 lg:w-6/12">
+        <div className="border-bg-base-content rounded-lg border-2 text-center">
+          <h2 className="pb-4 text-2xl font-bold">Sign in</h2>
           <div className="p-2">
             <button
               className="btn btn-outline btn-success gap-2"
