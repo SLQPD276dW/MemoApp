@@ -1,30 +1,16 @@
+import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import type {
-  ComponentStoryFn,
-  ComponentMeta,
-  Meta,
-  Story,
-} from '@storybook/react';
 
-/* import { Button } from './Button';
- */ import { daisyuiButton } from './daisyuiButton';
+import { Button } from './daisyuiButton';
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-export default {
-  // title: 'Example/daisyuiButton',
-  component: daisyuiButton,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-} as Meta<typeof daisyuiButton>;
+const meta: Meta<typeof Button> = {
+  title: 'DaisyUI',
+  component: Button,
+};
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-// const Template: ComponentStoryFn<typeof daisyuiButton> = (args) => <daisyuiButton {...args} />;
+export default meta;
+type Story = StoryObj<typeof Button>;
 
-export const Daisy: Story<typeof daisyuiButton> = {
-  args: {
-    primary: true,
-    label: 'Button',
-  },
+export const Primary: Story = {
+  render: () => <Button label="Daisy UI" />,
 };
