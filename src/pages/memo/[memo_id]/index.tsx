@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { GetServerSideProps } from 'next';
 import { useSession } from 'next-auth/react';
 import type { MemoType } from 'types/MemoType';
-import { unstable_getServerSession } from 'next-auth';
+import { getServerSession } from 'next-auth';
 import { options } from 'pages/api/auth/[...nextauth]';
 import { prisma } from 'lib/prisma';
 import Layout from 'components/Layout';
@@ -18,7 +18,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   req,
   res,
 }) => {
-  const session = await unstable_getServerSession(req, res, options);
+  const session = await getServerSession(req, res, options);
 
   if (session) {
     const memo = await prisma.memo.findFirst({

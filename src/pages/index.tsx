@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import type { GetServerSideProps } from 'next';
-import { unstable_getServerSession } from 'next-auth';
+import { getServerSession } from 'next-auth';
 import { options } from './api/auth/[...nextauth]';
 import type { MemoType } from '../types/MemoType';
 import Layout from '../components/Layout';
@@ -14,7 +14,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   req,
   res,
 }) => {
-  const session = await unstable_getServerSession(req, res, options);
+  const session = await getServerSession(req, res, options);
   if (!session) {
     return {
       props: {

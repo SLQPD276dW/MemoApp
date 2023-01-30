@@ -1,4 +1,4 @@
-import { unstable_getServerSession } from 'next-auth';
+import { getServerSession } from 'next-auth';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { prisma } from 'lib/prisma';
 import { options } from '../../auth/[...nextauth]';
@@ -7,7 +7,7 @@ export default async function handle(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const session = await unstable_getServerSession(req, res, options);
+  const session = await getServerSession(req, res, options);
   const memo_id = req.query.id;
 
   if (req.method === 'DELETE') {
